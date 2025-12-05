@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        /* CSS sedikit untuk membuat foto oval dan menata letak */
+        .foto-profil-oval {
+            /* Agar tinggi dan lebarnya berbeda, jadi bukan lingkaran */
+            width: 180px;
+            height: 220px;
+            object-fit: cover; /* Agar gambar tidak terdistorsi */
+            border: 4px solid #dee2e6; /* Bingkai abu-abu sederhana */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- === NAVIGASI ATAS === -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Profil Z</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biodata">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pendidikan">Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keahlian">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- === BAGIAN PROFIL === -->
+    <section id="profil" class="bg-light text-center py-5">
+        <div class="container">
+            <!-- Ganti 'rounded-circle' dengan 'rounded-pill' untuk bentuk oval -->
+            <img src="zakki.jpg" alt="Foto Profil" class="rounded-pill foto-profil-oval mb-3">
+            <h1>Zakki Muhammad Fadhillah</h1>
+            <p class="lead">Halo, saya Zakki M.F.
+Pelajar, kreator muda, sekaligus trader aktif yang sedang membangun masa depan lewat disiplin, fokus, dan konsistensi. Saya tertarik pada dunia investasi, bisnis digital, dan pengembangan diri.
+
+Misi saya sederhana: menjadi pribadi yang bermanfaat bagi banyak orang serta membantu anak muda memahami pentingnya membangun skill sejak dini.
+
+Di web ini, saya membagikan perjalanan, portofolio, dan proyek yang sedang saya kembangkan.</p>
+        </div>
+    </section>
+
+    <div class="container my-5">
+
+        <!-- === BAGIAN BIODATA (1 Kolom) === -->
+        <section id="biodata" class="mb-5">
+            <h2 class="text-center mb-4">Biodata Diri</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td><strong>Nama Lengkap</strong></td>
+                            <td>Zakki Muhammad Fadhillah</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tempat, Tanggal Lahir</strong></td>
+                            <td>Garut 29 Juni 2009</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alamat</strong></td>
+                            <td>Perum Pondok Indah Leuwigoong</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hobi</strong></td>
+                            <td>Banyak </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- === BAGIAN PENDIDIKAN (2 Kolom) === -->
+        <section id="pendidikan" class="mb-5">
+            <h2 class="text-center mb-4">Riwayat Pendidikan</h2>
+            <div class="row">
+                <!-- Kolom 1 -->
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <img src="pulgar.jpeg" width="380px card-img-top" alt="Foto Universitas">
+                        <div class="card-body">
+                            <h5 class="card-title">SMAN 10 Garut</h5>
+                            <p class="card-text">XII 3</p>
+                            <p class="card-text"><small class="text-muted">2023 - Sekarang</small></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kolom 2 -->
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <img src="nanyang.jpeg" class="card-img-top" alt="Foto SMA">
+                        <div class="card-body">
+                            <h5 class="card-title">nanyang university</h5>
+                            <p class="card-text">WEB3 ON CAMPUS</p>
+                            <p class="card-text"><small class="text-muted">insyallah</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === BAGIAN KEAHLIAN (2 Kolom) === -->
+        <section id="keahlian" class="mb-5">
+            <h2 class="text-center mb-4">Keahlian</h2>
+            <div class="row">
+                <!-- Kolom Kiri: Nama Keahlian -->
+                <div class="col-md-6">
+                    <p>Teknikal Analysis</p>
+                    <p>Fundamental Analysis</p>
+                    <p>Public Speaking</p>
+                    <p>Dsain</p>
+                </div>
+                <!-- Kolom Kanan: Progress Bar -->
+                <div class="col-md-6">
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-success" style="width: 80%">Pemula</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-info" style="width: 70%">Pemula</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" style="width: 40%">Belajar</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" style="width: 50%">Belajar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === BAGIAN GALERI FOTO (Beberapa Kolom) === -->
+        <section id="galeri" class="mb-5">
+            <h2 class="text-center mb-4">Galeri Kegiatan</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <img src="trading.jpeg" width="300px img-fluid rounded" alt="Kegiatan 1">
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <img src="osis.jpeg" class="img-fluid rounded" alt="Kegiatan 2">
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <img src="inves.jpeg" class="img-fluid rounded" alt="Kegiatan 3">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- === FOOTER & KONTAK === -->
+    <footer id="kontak" class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h4>Hubungi Saya</h4>
+            <p><i class="bi bi-envelope"></i> Zakkimuhammadf5@gmail.com</p>
+            <p><i class="bi bi-whatsapp"></i> 0813-2192-7026</p>
+            <hr>
+            <p>&copy; 2025 - ZakkiFX</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
